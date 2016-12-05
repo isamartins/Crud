@@ -1,0 +1,18 @@
+create table login(
+    id serial not null,
+    usuario varchar(100),
+    senha varchar(100),
+    constraint id_pk_login primary key(id)
+)
+
+
+create table usuarios(
+    codigo serial,
+    nome varchar(100),
+    endereco text,
+    telefone varchar(20),
+    
+    constraint codigo_pk primary key(codigo)
+    
+
+)
